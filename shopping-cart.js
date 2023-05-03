@@ -17,4 +17,5 @@ function addToCart(element) {
     let empty = document.querySelector('li:first-child');
     const newItem = empty.textContent = itemName;
    // console.log(newItem);
+   console.log(test);
 }
