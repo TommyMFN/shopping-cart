@@ -10,12 +10,16 @@ function closeModal() {
 function addToCart(element) {
     let itemName = element.parentNode.parentNode.querySelector("td:first-child").textContent;
     let itemPrice = element.parentNode.parentNode.querySelector("td:nth-child(2)").textContent;
+    const cartItems = document.querySelectorAll('ul li');
 
     console.log(itemName, itemPrice);
 
-    // change empty to element's nname
-    let empty = document.querySelector('li:first-child');
-    const newItem = empty.textContent = itemName;
-   // console.log(newItem);
-   console.log(test);
+    // loop through cartitems and add each one by one
+    for (let i = 0; i < cartItems.length; i++) {
+        if (cartItems[i].textContent === 'Empty') {
+            cartItems[i].textContent = itemName;
+            break;
+        }
+    }
+   
 }
