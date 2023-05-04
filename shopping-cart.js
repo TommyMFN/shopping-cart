@@ -11,7 +11,8 @@ function addToCart(element) {
     let itemName = element.parentNode.parentNode.querySelector("td:first-child").textContent;
     let itemPrice = element.parentNode.parentNode.querySelector("td:nth-child(2)").textContent;
     const cartItems = document.querySelectorAll('ul li');
-
+    let totalPrice = document.querySelectorAll('div p');
+    console.log(totalPrice);
     console.log(itemName, itemPrice);
 
     // loop through cartitems and add each one by one
