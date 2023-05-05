@@ -1,0 +1,21 @@
+{
+  "name": "tommy-shopping-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shopping-cart.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TommyMFN/tommy-shopping-cart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TommyMFN/tommy-shopping-cart/issues"
+  },
+  "homepage": "https://github.com/TommyMFN/tommy-shopping-cart#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  }
+}
