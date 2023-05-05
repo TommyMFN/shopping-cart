@@ -36,10 +36,14 @@ function addToCart(element) {
             cartItems[i].textContent = `${itemName} ${itemPrice}`;
             storedItemPrice = parseFloat(itemPrice); // Convert price string to number
             break;
-        } else if (cartItems[i].textContent !== 'Empty') {
+        } else if (i === cartItems.length- 1) { // all items are filled up
+            alert("Cart is full. You cannot add more items.");
+            return;} else if (cartItems[i].textContent !== 'Empty') {
             total += storedItemPrice; // Add price of previously added item
             cartTotal.textContent =  `Total: $${total}`; // Update total text
         } 
         
     }
+
+    
 }
